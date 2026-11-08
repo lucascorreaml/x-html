@@ -62,7 +62,7 @@ O ZIP de fonte fica em `release/`. Ele inclui código, testes e documentação; 
 - [Segurança](SECURITY.md)
 - [Histórico de alterações](CHANGELOG.md)
 - [Dependências e licenças](THIRD_PARTY.md)
-- [Preparar o repositório no GitHub](docs/GITHUB.md)
+- [Repositório no GitHub](docs/GITHUB.md)
 
 ## Autoria e licença
 

@@ -1,6 +1,6 @@
 # Política de privacidade
 
-Versão referente à extensão 1.0.3. Projeto independente de exportação local de posts e artigos do X.
+Versão referente à extensão 1.0.4. Projeto independente de exportação local de posts e artigos do X.
 
 ## Finalidade e dados tratados
 
@@ -26,4 +26,4 @@ O usuário pode revogar a permissão opcional, desativar o acesso ao X ou remove
 
 ## Alterações e contato
 
-Mudanças no tratamento de dados devem atualizar esta política e o histórico de versões. Após a publicação do repositório, o canal de contato será a página de Issues desse repositório. Não publique dados pessoais ou credenciais em Issues. Problemas de segurança devem seguir [SECURITY.md](SECURITY.md).
+Mudanças no tratamento de dados devem atualizar esta política e o histórico de versões. Para contato, use as [Issues do repositório](https://github.com/lucascorreaml/x-html/issues). Não publique dados pessoais ou credenciais em Issues. Problemas de segurança devem seguir [SECURITY.md](SECURITY.md).
