@@ -1,0 +1,24 @@
+name: Relatar problema
+description: Erro de salvamento ou de conteúdo exportado
+body:
+  - type: markdown
+    attributes:
+      value: "Não publique cookies, tokens, diagnósticos completos, capturas privadas ou conteúdo protegido. Use exemplos fictícios."
+  - type: input
+    id: version
+    attributes:
+      label: Versão da extensão e do Chrome
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Passos para reproduzir
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado e resultado observado
+    validations:
+      required: true

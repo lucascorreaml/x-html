@@ -1,0 +1,28 @@
+# Local artifacts and dependencies
+node_modules/
+extension/vendor/
+dist/
+release/
+.npm-cache/
+*.tgz
+*.zip
+*.log
+__pycache__/
+
+# Private development material is never part of the repository
+evidencias/
+recuperados/
+para apagar/
+github-upload/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crx
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

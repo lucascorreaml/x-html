@@ -1,0 +1,19 @@
+{
+  "name": "x-html",
+  "version": "1.0.3",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "vendor": "node scripts/vendor.mjs",
+    "build": "node scripts/package.mjs",
+    "audit:public": "node scripts/audit-public.mjs",
+    "release:source": "node scripts/release-source.mjs"
+  },
+  "description": "Manual offline export of X posts and articles",
+  "license": "MIT",
+  "author": "lucascorreaml"
+}

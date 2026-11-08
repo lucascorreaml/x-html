@@ -1,0 +1,18 @@
+﻿Dependencias de build/runtime, preparadas separadamente do repositorio de fonte:
+
+@ffmpeg/ffmpeg 0.12.15 - MIT
+Copyright (c) 2019 Jerome Wu. Full text: licenses/ffmpeg-wrapper-MIT.txt
+Official source: https://github.com/ffmpegwasm/ffmpeg.wasm
+
+@ffmpeg/core 0.12.10 - GPL-2.0-or-later
+Full text: licenses/GPL-2.0-or-later.txt
+The core includes FFmpeg and other libraries; see THIRD_PARTY.md in the source
+repository for provenance and conditions to address before binary publication.
+
+The npm archives are pinned by version and SHA-512 in vendor-lock.json.
+No dependency scripts are executed during preparation. Runtime code is local;
+no CDN is used by the extension's configured load path.
+
+The original X-HTML extension code is MIT, Copyright (c) 2026 lucascorreaml.
+The MIT permission does not replace GPL terms of the third-party core.
+See LICENSE for the original code and the separate dependency license texts.
