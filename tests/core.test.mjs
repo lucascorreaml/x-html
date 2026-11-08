@@ -39,7 +39,6 @@ test('post longo usa texto integral e mantém entidades separadas do texto corta
   assert.match(p.text, /guardrails/);
   assert.equal(p.author.handle, 'autor_exemplo');
   assert.equal(p.author.badge, 'blue');
-  assert.equal(p.metrics.bookmarks, 14);
 });
 
 test('wrapper de visibilidade conserva conteúdo e restrições; tombstone não some', async () => {

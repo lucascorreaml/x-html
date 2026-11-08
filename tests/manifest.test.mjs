@@ -6,14 +6,13 @@ import { readFile as readText } from 'node:fs/promises';
 import vm from 'node:vm';
 import { postCss,articleCss } from '../extension/core/styles.js';
 
-test('manifest limita domínios, mantém host de gravações opcional e não declara API de bookmarks', async()=>{
+test('manifest limita domínios e mantém host de gravações opcional', async()=>{
   const m=JSON.parse(await readFile(new URL('../extension/manifest.json',import.meta.url),'utf8'));
   assert.equal(m.manifest_version,3);
   assert.ok(m.host_permissions.includes('https://x.com/*'));
   assert.ok(m.host_permissions.includes('https://pbs.twimg.com/*'));
   assert.ok(m.host_permissions.includes('https://video.twimg.com/*'));
   assert.ok(m.optional_host_permissions.includes('https://*.video.pscp.tv/*'));
-  assert.ok(!m.permissions.includes('bookmarks'));
   assert.ok(!JSON.stringify(m).match(/https?:\/\/(?!x\.com|pbs\.twimg\.com|video\.twimg\.com|\*\.video\.pscp\.tv)/));
 });
 

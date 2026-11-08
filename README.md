@@ -39,7 +39,7 @@ Abra o post ou artigo no X e aguarde carregar. Escolha o formato no popup e use 
 
 O destino usa a pasta de downloads do seu Chrome: `X/autor_titulo.html`, `X/autor_titulo.md` e, no Markdown, `X/autor_titulo_midias/`. Não há caminho de usuário fixo. A preferência do Chrome para perguntar onde salvar pode prevalecer. O caminho efetivo é conferido após o Chrome informar o destino; caminhos com mais de 240 caracteres são sinalizados como falha.
 
-O salvamento é sempre manual. Não há biblioteca, serviço em nuvem, conta própria da extensão ou exportação de listas em lote.
+O salvamento é sempre manual. A extensão não mantém biblioteca nem serviço em nuvem.
 
 ## Privacidade
 

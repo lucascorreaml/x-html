@@ -8,7 +8,7 @@ articlePost.article={article_results:{result:{rest_id:'article-1',title:'Artigo 
 const embedded=rawPost('1005');
 const embedArticle=rawPost('1004');
 embedArticle.article={article_results:{result:{title:'Artigo com post',content_state:{blocks:[{type:'unstyled',text:'Antes do post'},{type:'atomic',entityRanges:[{key:0}]},{type:'unstyled',text:'Depois do post'}],entityMap:[{key:0,value:{type:'TWEET',data:{tweetId:'1005'}}}]}}}};
-const long=rawPost('1006');long.note_tweet={note_tweet_results:{result:{text:'Exemplo de guardrails e texto longo. '.repeat(20)}}};long.legacy.bookmark_count=14;
+const long=rawPost('1006');long.note_tweet={note_tweet_results:{result:{text:'Exemplo de guardrails e texto longo. '.repeat(20)}}};
 const edited=rawPost('1008');edited.edit_control={edit_tweet_ids:['1007','1008']};
 const poll=rawPost('1009');poll.card={legacy:{binding_values:[...['A','B'].flatMap((label,i)=>[{key:`choice${i+1}_label`,value:{string_value:label}},{key:`choice${i+1}_count`,value:{string_value:String([54,3][i])}}]),{key:'counts_are_final',value:{boolean_value:true}}]}};
 const note=rawPost('1010');note.birdwatch_pivot={subtitle:{text:'Nota demonstrativa: 54 chamadas de exemplo.',entities:[{ref:{expandedUrl:'https://example.test/reference',title:'Fonte fictícia'}}]}};

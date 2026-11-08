@@ -37,7 +37,7 @@ function postHTML(p, assets, index, markers=false, thread=false) {
   const metrics=p.metrics||{};
   const avatarAsset=assets.get(`avatar:${p.author?.id}`),avatarData=avatarAsset?.data;
   const avatar=Array.isArray(avatarData)?avatarData.join(''):avatarData;
-  const content=`${author(p,assets,false)}<div class="handle">${escapeHTML(date(p.createdAt))}${p.edited?' · editado':''}</div><p>${text}</p>${quote}${media}${poll}${card}${note}<div class="metrics">Respostas ${Number(metrics.replies||0)} · Reposts ${Number(metrics.retweets||0)} · Curtidas ${Number(metrics.likes||0)} · Itens salvos ${Number(metrics.bookmarks||0)} · Visualizações ${Number(metrics.views||0)} <span>(na data da captura)</span></div><p>Original: ${link?`<a href="${escapeHTML(link)}">${escapeHTML(link)}</a>`:'link indisponível'}</p>`;
+  const content=`${author(p,assets,false)}<div class="handle">${escapeHTML(date(p.createdAt))}${p.edited?' · editado':''}</div><p>${text}</p>${quote}${media}${poll}${card}${note}<div class="metrics">Respostas ${Number(metrics.replies||0)} · Reposts ${Number(metrics.retweets||0)} · Curtidas ${Number(metrics.likes||0)} · Visualizações ${Number(metrics.views||0)} <span>(na data da captura)</span></div><p>Original: ${link?`<a href="${escapeHTML(link)}">${escapeHTML(link)}</a>`:'link indisponível'}</p>`;
   return `<article class="post${thread?' thread':''}"><div class="rail">${avatar?`<img alt="Foto de perfil" src="data:${escapeHTML(avatarAsset.mime||'image/jpeg')};base64,${avatar}">`:''}</div><div>${content}</div></article>`;
 }
 

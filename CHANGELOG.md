@@ -1,5 +1,10 @@
 # Histórico
 
+## 1.0.4
+
+- Métricas exportadas limitadas a respostas, reposts, curtidas e visualizações.
+- Documentação e modelo de dados alinhados ao salvamento manual de posts, artigos e mídias.
+
 ## 1.0.3
 
 - Preparação do código-fonte para GitHub, com documentação, CI e empacotamento por lista explícita de inclusão.
